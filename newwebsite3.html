@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 2fr 2fr 2fr ;
+            /* grid-template-columns: repeat(); */
+            /* grid-template-rows: ; */
+            grid-template-rows: repeat(2, 2fr);
+            grid-gap: 1.5rem;
+            /* grid-row-gap: 1rem; */
+            /* grid-column-gap: 3rem; */
+
+        }
+
+        .box {
+            background-color: aqua;
+            border: 2px solid red;
+            border-radius: 20px;
+            padding: 25px;
+        }
+
+        .box2 {
+            background-color: aqua;
+            border: 2px solid red;
+            border-radius: 20px;
+            padding: 25px;
+        }
+
+        .box:nth-child(1) {
+            /* grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 4; */
+            grid-column: 1 / span 3;
+            grid-row: 1 / span 4;
+            background: url(1.jpg) no-repeat center center/cover;
+            color: blue;}
+        
+
+        .grid .box img {
+            height: 100px;
+            margin-right: auto;
+            display: inline-block;
+        }
+
+        hr {
+            color: aqua;
+            margin-top: 60px;
+            width: 80%;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="grid">
+        <div class="box">
+            <marquee behavior="" direction="">
+
+                <img src="subway.png" alt="">
+                <img src="subway.png" alt="">
+                <img src="subway.png" alt="">
+                <img src="subway.png" alt="">
+            </marquee>
+            <h2> Food Delivery</h2>
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente facere, autem commodi dicta inventore
+                placeat soluta? Minima perferendis, officiis, esse commodi illo beatae, error aliquam quis hic omnis
+                voluptates adipisci expedita veniam fuga sit!
+            </p>
+            <hr>
+
+
+        </div>
+        <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus quod, vel officiis illo quia
+            odit, similique aliquid, alias Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero aliquid
+            doloremque earum maxime magnam nisi aperiam nulla veniam obcaecati dolorum?laborum ad sit esse consequuntur
+            totam omnis voluptate. Dolore quisquam, ad
+            commodi eligendi?</div>
+
+    </div>
+</body>
+
+</html>

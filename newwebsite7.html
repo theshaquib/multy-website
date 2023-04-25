@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&family=Bree+Serif&family=Oswald:wght@500&family=Poppins:wght@100;400&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .container {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+                'navbar navbar navbar navbar '
+                'section section section section'
+                'aside aside aside aside'
+                'footer footer footer footer';
+        }
+
+        .item {
+            background-color: blue;
+            border: 3.5px solid black;
+            padding: 10px;
+            border-radius: 15px;
+            color: white;
+        }
+
+        #navbar {
+            grid-area: navbar;
+            font-family: 'Baloo Bhai 2', cursive;
+            background: url(3.jpg);
+
+        }
+
+        span {
+
+            padding: 3px 22px;
+            border-radius: 20px;
+            cursor: pointer;
+            text-align: center;
+            align-items: center;
+            margin-left: 10px;
+
+        }
+
+        span:hover {
+            color: white;
+            background-color: rgb(45, 48, 53);
+        }
+
+        #section {
+            grid-area: section;
+            font-family: 'Bree Serif', serif;
+            background: url(3.jpg);
+
+        }
+
+        img {
+            width: 800px;
+            height: 600px;
+            border-radius: 20px;
+        }
+
+        #aside {
+            grid-area: aside;
+            font-family: 'Bree Serif', serif;
+            background: url(3.jpg);
+
+        }
+
+        footer {
+            grid-area: footer;
+            text-align: center;
+            font-family: 'Baloo Bhai 2', cursive;
+            background: url(3.jpg);
+
+        }
+
+        @media only screen and (max-width:300px) {
+            body {
+                background-color: red;
+            }
+
+            .container {
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer ';
+            }
+
+            aside {
+                display: none;
+            }
+
+            span {
+                display: block;
+                text-align: center;
+            }
+        }
+
+        @media only screen and (min-width: 300px) and (max-width:500px) {
+            body {
+                background-color: blue;
+            }
+
+            .container {
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer ';
+            }
+
+            aside {
+                display: none;
+            }
+
+            span {
+                display: block;
+                text-align: center;
+            }
+        }
+
+        @media (min-width: 500px) and (max-width:800px) {
+            body {
+                background-color: yellow;
+            }
+
+            .container {
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer ';
+            }
+
+            span {
+                display: block;
+                text-align: center;
+            }
+        }
+
+        @media (min-width: 800px) {
+            body {
+                background: url(1.jpg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="navbar" class="item">
+            <span>Home</span>
+            <span>About</span>
+            <span>Services</span>
+            <span>Contact</span>
+        </div>
+        <div id="section" class="item">
+            <h1>Learn CSS in hindi</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae, tempore Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Mollitia quibusdam reiciendis a explicabo fuga error aspernatur quod iure
+                incidunt, illo beatae aut placeat, eaque, deleniti saepe doloremque illum earum alias temporibus amet!
+                Eligendi cum eos fuga assumenda minima, deserunt veniam magni autem et? Eius esse ab numquam nobis quis
+                et magnam provident temporibus qui commodi libero, at pariatur debitis. Odio ipsum neque obcaecati
+                commodi. Totam voluptates vel id quas ut minima asperiores itaque nobis veniam, assumenda, eaque ea
+                deleniti aperiam aspernatur cupiditate inventore possimus at quos. Ipsam dolore quia sint aspernatur ut
+                rem, placeat atque officia harum voluptatum culpa necessitatibus Lorem ipsum dolor sit, amet consectetur
+                adipisicing elit. Nam exercitationem vero, deserunt iusto ipsam rem provident quidem numquam inventore
+                perferendis, quaerat labore facilis minima nostrum nisi doloribus iste excepturi enim aliquid! Deserunt
+                illo possimus earum provident magni veniam suscipit sit cupiditate ipsa et facilis commodi asperiores
+                impedit laudantium nemo quae illum natus, aliquam doloremque est. Porro quidem incidunt ipsa laboriosam
+                odit voluptatem recusandae accusamus aspernatur minus eos qui soluta, ad minima sit excepturi possimus
+                reiciendis temporibus officia ducimus a maxime adipisci? Fugiat qui perspiciatis voluptatibus ex quidem?
+                Dignissimos similique ad distinctio quia totam tempore saepe cumque mollitia sunt corrupti eos sit
+                fugit, culpa eveniet deserunt, aliquam magnam facere ab maiores! Earum consectetur ea similique neque
+                impedit doloribus aut, fugiat alias aliquam quibusdam qui, itaque, quos nihil. Enim optio alias dolore,
+                delectus sequi impedit! Delectus non, alias libero exercitationem eaque distinctio. Nesciunt sint
+                veritatis quidem molestias perferendis laborum consectetur quibusdam, veniam voluptatem assumenda ipsa
+                laudantium, placeat eligendi accusantium earum nihil laboriosam a provident quam doloremque maxime atque
+                aliquam recusandae. Atque, distinctio blanditiis porro deleniti labore obcaecati sit quasi, tempore iste
+                necessitatibus reprehenderit placeat quidem ratione quia molestias esse temporibus iure officia
+                repudiandae, tempora numquam laboriosam fugiat dolore. Ipsam quas in doloribus dicta esse, fugiat
+                molestiae accusantium! Voluptates fugit, aut commodi officiis quidem, corrupti perferendis quis totam
+                rerum esse magnam pariatur ipsam officia facilis ducimus earum dolorem? Odio ipsum iusto expedita fugiat
+                quia impedit at consequuntur aperiam veniam. Consequuntur commodi illum sequi debitis, distinctio non
+                rem eaque obcaecati exercitationem dolores odit at?..</p>
+           
+                <img src="5.jpg" alt="" style="float: left; margin-right: 18px;">
+                 <p style="padding-top: 130px;" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, architecto temporibus corporis expedita
+                    accusantium nihil ipsa iusto exercitationem, eveniet amet repellat placeat ullam inventore excepturi vel
+                    quaerat ut doloremque neque delectus molestias voluptate? Dicta dolore delectus officia, error vel fuga
+                    inventore Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius sapiente accusamus praesentium, minus commodi saepe soluta, expedita architecto voluptatem exercitationem consectetur? Labore nobis excepturi itaque sequi magnam quidem aliquid impedit doloribus reprehenderit similique sed sit iusto, vel consectetur deleniti error placeat numquam accusantium tenetur asperiores! Beatae voluptas unde sed libero provident excepturi, placeat tempora illo, tempore esse ipsum error quisquam nulla dolore dolorum dignissimos atque cumque dolores! Adipisci aperiam sequi consequatur similique ut esse sint explicabo, reiciendis totam temporibus sit error illo eligendi porro modi rem corrupti necessitatibus cumque facilis assumenda. Suscipit hic magnam quos explicabo ipsam. Qui numquam totam autem corporis labore libero iure excepturi ut id, nihil doloremque vel expedita amet accusantium animi nobis provident beatae a, ex placeat  .</p>
+            
+        </div>
+        <div id="aside" class="item">
+            <h1>More about us</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo, ad! Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Nobis ipsa tempora doloribus amet, cupiditate sequi placeat non eum in id
+                ut voluptatibus recusandae labore. Quis maiores dignissimos placeat mollitia. Eius recusandae soluta at
+                molestiae minima ipsum, doloremque reiciendis sed earum, sequi doloribus, adipisci ratione magnam? Neque
+                excepturi non illum tempore Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim voluptatibus
+                quis, tenetur iusto eaque officiis facere id. Corrupti voluptatibus odio aperiam id aut consequatur fuga
+                doloremque unde alias repudiandae. Atque voluptatum blanditiis dolores alias eveniet iusto veniam
+                commodi adipisci. Delectus deserunt animi accusamus fugiat cum asperiores alias illum quis, voluptates
+                atque perspiciatis, placeat obcaecati eveniet numquam assumenda aperiam nisi vero eius modi quibusdam
+                fugit ipsam quam sint. Cum minima maxime perspiciatis nam dicta tenetur odio. Consequuntur iusto
+                excepturi maxime exercitationem asperiores perferendis ab pariatur veritatis cumque, eius fuga obcaecati
+                iure saepe voluptate quasi distinctio explicabo qui fugit itaque non, quas libero harum! Doloribus hic
+                placeat aliquam optio culpa possimus dolorem, consectetur odit voluptate iure facere maxime alias quam
+                molestiae? Omnis, corporis! Harum fugiat, quibusdam magni rerum repellendus vero expedita minima
+                quisquam? Voluptatem vitae laudantium quis facilis recusandae nihil harum illo ratione, placeat, ea
+                officiis quae tenetur nemo nisi eveniet? Sed.!</p>
+        </div>
+        <footer class="item">
+            Copyright &copy; www.myOnlinecss.com. All Rights reserved!
+        </footer>
+    </div>
+
+</body>
+
+</html>

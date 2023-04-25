@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Grid + Media Queries</title>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&family=Bree+Serif&family=Oswald:wght@500&family=Poppins:wght@100;400&display=swap"
+    rel="stylesheet">
+</head>
+<style>
+    .container {
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-areas:
+            'navbar navbar navbar navbar'
+            'section section section aside'
+            'footer footer footer footer ';
+    }
+
+    @media only screen and (max-width:300px) {
+        body {
+            background-color: red;
+        }
+        .container {
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section section'
+                'aside aside aside aside'
+                'footer footer footer footer ';
+        }
+        aside{
+            display: none;
+        }
+        span{
+            display: block;
+            text-align: center;
+        }
+    }
+
+    @media only screen and (min-width: 300px) and (max-width:500px) {
+        body {
+            background-color: blue;
+        }
+        .container {
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section section'
+                'aside aside aside aside'
+                'footer footer footer footer ';
+        }
+        aside{
+            display: none;
+        }
+        span{
+            display: block;
+            text-align: center;
+        }
+    }
+
+    @media (min-width: 500px) and (max-width:800px) {
+        body {
+            background-color: yellow;
+        }
+
+        .container {
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section section'
+                'aside aside aside aside'
+                'footer footer footer footer ';
+        }
+        span{
+            display: block;
+            text-align: center;
+        }
+    }
+
+    @media (min-width: 800px) {
+        body {
+            background-color: green;
+        }
+    }
+
+    .bdr {
+        border: 2px solid black;
+        padding: 10px 23px;
+        background-color: wheat;
+    }
+
+    nav {
+        grid-area: navbar;
+        font-family: 'Baloo Bhai 2', cursive;
+    }
+
+    section {
+        grid-area: section;
+        font-family: 'Bree Serif', serif;
+    }
+
+    aside {
+        grid-area: aside;
+        font-family: 'Bree Serif', serif;
+    }
+
+    footer {
+        grid-area: footer;
+        text-align: center;
+        font-family: 'Baloo Bhai 2', cursive;
+    }
+</style>
+
+<body>
+    <div class="container ">
+        <nav class="bdr">
+            <span>Home</span>
+            <span>About</span>
+            <span>Services</span>
+            <span>Contact</span> 
+        </nav>
+        <section class="bdr">
+            <h2>Learn CSS in hindi</h2>
+            <p>muses, temporibus? Ratione assumenda dignissimos iste hic eligendi aspernatur li aliquid perferendis dolorem repellat.
+            </p>
+        </section>
+        <aside class="bdr">
+            <h1>More about us</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, error quidem explicabount. Repellendus optio deleniti fugit cum pariatur praesentium excepturi natus itaque!</p>
+        </aside>
+    </div>
+    <footer class="bdr">
+            Copyright &copy; www.myOnlineMeal.com. All Rights reserved!
+        </footer>
+
+</body>
+
+</html>
